@@ -40,7 +40,6 @@
         	this.tbCSHK = new System.Windows.Forms.TextBox();
         	this.cbTrayIcon = new System.Windows.Forms.CheckBox();
         	this.btnHelp = new System.Windows.Forms.Button();
-        	this.GitHubLink = new System.Windows.Forms.LinkLabel();
         	this.cbAutorun = new System.Windows.Forms.CheckBox();
         	this.gbSBL = new System.Windows.Forms.GroupBox();
         	this.gbHK = new System.Windows.Forms.GroupBox();
@@ -50,7 +49,6 @@
         	this.tbCLineHK = new System.Windows.Forms.TextBox();
         	this.HelpTT = new System.Windows.Forms.ToolTip(this.components);
         	this.cbCycleMode = new System.Windows.Forms.CheckBox();
-        	this.btnUpd = new System.Windows.Forms.Button();
         	this.cbSwitchLayoutKeys = new System.Windows.Forms.ComboBox();
         	this.cbBlockC = new System.Windows.Forms.CheckBox();
         	this.lbswithlayout = new System.Windows.Forms.Label();
@@ -199,24 +197,11 @@
         	this.btnHelp.UseVisualStyleBackColor = true;
         	this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
         	// 
-        	// GitHubLink
-        	// 
-        	this.GitHubLink.AutoSize = true;
-        	this.GitHubLink.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-        	this.GitHubLink.Location = new System.Drawing.Point(11, 9);
-        	this.GitHubLink.Name = "GitHubLink";
-        	this.GitHubLink.Size = new System.Drawing.Size(89, 13);
-        	this.GitHubLink.TabIndex = 16;
-        	this.GitHubLink.TabStop = true;
-        	this.GitHubLink.Text = "View on GitHub";
-        	this.GitHubLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.GitHubLink_LinkClicked);
-        	this.GitHubLink.MouseHover += new System.EventHandler(this.GitHubLink_MouseHover);
-        	// 
         	// cbAutorun
         	// 
         	this.cbAutorun.AutoSize = true;
         	this.cbAutorun.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-        	this.cbAutorun.Location = new System.Drawing.Point(110, 9);
+			this.cbAutorun.Location = new System.Drawing.Point(11, 9);
         	this.cbAutorun.Name = "cbAutorun";
         	this.cbAutorun.Size = new System.Drawing.Size(152, 17);
         	this.cbAutorun.TabIndex = 17;
@@ -329,18 +314,6 @@
         	this.cbCycleMode.UseVisualStyleBackColor = true;
         	this.cbCycleMode.CheckedChanged += new System.EventHandler(this.cbCycleMode_CheckedChanged);
         	this.cbCycleMode.MouseHover += new System.EventHandler(this.cbCycleMode_MouseHover);
-        	// 
-        	// btnUpd
-        	// 
-        	this.btnUpd.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuText;
-        	this.btnUpd.Location = new System.Drawing.Point(261, 6);
-        	this.btnUpd.Name = "btnUpd";
-        	this.btnUpd.Size = new System.Drawing.Size(64, 24);
-        	this.btnUpd.TabIndex = 23;
-        	this.btnUpd.Text = "Update";
-        	this.btnUpd.UseVisualStyleBackColor = true;
-        	this.btnUpd.Click += new System.EventHandler(this.btnUpd_Click);
-        	this.btnUpd.MouseHover += new System.EventHandler(this.btnUpd_MouseHover);
         	// 
         	// cbSwitchLayoutKeys
         	// 
@@ -488,11 +461,9 @@
         	this.Controls.Add(this.cbBlockC);
         	this.Controls.Add(this.cbSwitchLayoutKeys);
         	this.Controls.Add(this.lbswithlayout);
-        	this.Controls.Add(this.btnUpd);
         	this.Controls.Add(this.cbCycleMode);
         	this.Controls.Add(this.gbHK);
         	this.Controls.Add(this.cbAutorun);
-        	this.Controls.Add(this.GitHubLink);
         	this.Controls.Add(this.btnHelp);
         	this.Controls.Add(this.cbTrayIcon);
         	this.Controls.Add(this.btnApply);
@@ -531,14 +502,12 @@
         private System.Windows.Forms.TextBox tbCSHK;
         private System.Windows.Forms.CheckBox cbTrayIcon;
         private System.Windows.Forms.Button btnHelp;
-        private System.Windows.Forms.LinkLabel GitHubLink;
         private System.Windows.Forms.CheckBox cbAutorun;
         private System.Windows.Forms.GroupBox gbSBL;
         private System.Windows.Forms.GroupBox gbHK;
         private System.Windows.Forms.ToolTip HelpTT;
         private System.Windows.Forms.CheckBox cbCycleMode;
         private System.Windows.Forms.TextBox tbCLineHK;
-        private System.Windows.Forms.Button btnUpd;
         private System.Windows.Forms.CheckBox cbCLineActive;
         private System.Windows.Forms.CheckBox cbCSActive;
         private System.Windows.Forms.CheckBox cbCLActive;

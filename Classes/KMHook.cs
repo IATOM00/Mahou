@@ -43,10 +43,9 @@ namespace Mahou {
 		static List<char> c_snip = new List<char>();
 		public static System.Windows.Forms.Timer doublekey = new System.Windows.Forms.Timer();
 		public delegate IntPtr LowLevelProc(int nCode, IntPtr wParam, IntPtr lParam);
-		public static string[] snipps = new[] { "mahou", "eml" };
+		public static string[] snipps = new[] { "mahou" };
 		public static string[] exps = new[] {
-			"Mahou (魔法) - Magical layout switcher.",
-			"BladeMight@gmail.com"
+			"Mahou - layout switcher."
 		};
 		#endregion
 		#region Keyboard & Mouse hooks events

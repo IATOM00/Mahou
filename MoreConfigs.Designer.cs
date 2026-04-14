@@ -71,7 +71,6 @@
         	this.pEExtra = new System.Windows.Forms.Panel();
         	this.tbConMorWor = new System.Windows.Forms.TextBox();
         	this.lbConMorWor = new System.Windows.Forms.Label();
-        	this.cbCheckForUPD = new System.Windows.Forms.CheckBox();
         	this.cbScrollLight = new System.Windows.Forms.CheckBox();
         	((System.ComponentModel.ISupportInitialize)(this.nudMTCount)).BeginInit();
         	((System.ComponentModel.ISupportInitialize)(this.nudRefreshRate)).BeginInit();
@@ -398,8 +397,7 @@
         	this.tbSnippets.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
         	this.tbSnippets.Size = new System.Drawing.Size(258, 121);
         	this.tbSnippets.TabIndex = 33;
-        	this.tbSnippets.Text = "->mahou\r\n====>\r\nMahou (魔法) - Magical layout switcher.\r\n<====\r\n->eml\r\n====>BladeMi" +
-	"ght@gmail.com<====\r\n";
+			this.tbSnippets.Text = "->mahou\r\n====>\r\nMahou - layout switcher.\r\n<====\r\n";
         	this.tbSnippets.WordWrap = false;
         	// 
         	// cbTrBLT
@@ -488,7 +486,6 @@
         	// 
         	this.pEExtra.Controls.Add(this.tbConMorWor);
         	this.pEExtra.Controls.Add(this.lbConMorWor);
-        	this.pEExtra.Controls.Add(this.cbCheckForUPD);
         	this.pEExtra.Controls.Add(this.cbScrollLight);
         	this.pEExtra.Dock = System.Windows.Forms.DockStyle.Fill;
         	this.pEExtra.Location = new System.Drawing.Point(0, 0);
@@ -499,7 +496,7 @@
         	// 
         	// tbConMorWor
         	// 
-        	this.tbConMorWor.Location = new System.Drawing.Point(144, 81);
+			this.tbConMorWor.Location = new System.Drawing.Point(144, 58);
         	this.tbConMorWor.Name = "tbConMorWor";
         	this.tbConMorWor.Size = new System.Drawing.Size(124, 20);
         	this.tbConMorWor.TabIndex = 3;
@@ -510,23 +507,12 @@
         	// lbConMorWor
         	// 
         	this.lbConMorWor.AutoSize = true;
-        	this.lbConMorWor.Location = new System.Drawing.Point(27, 58);
+			this.lbConMorWor.Location = new System.Drawing.Point(27, 35);
         	this.lbConMorWor.Name = "lbConMorWor";
         	this.lbConMorWor.Size = new System.Drawing.Size(151, 13);
         	this.lbConMorWor.TabIndex = 2;
         	this.lbConMorWor.Text = "Convert multiple words hotkey:";
         	this.lbConMorWor.MouseHover += new System.EventHandler(this.LbConMorWorMouseHover);
-        	// 
-        	// cbCheckForUPD
-        	// 
-        	this.cbCheckForUPD.AutoSize = true;
-        	this.cbCheckForUPD.Location = new System.Drawing.Point(10, 35);
-        	this.cbCheckForUPD.Name = "cbCheckForUPD";
-        	this.cbCheckForUPD.Size = new System.Drawing.Size(198, 17);
-        	this.cbCheckForUPD.TabIndex = 1;
-        	this.cbCheckForUPD.Text = "Enable check for updates at startup.";
-        	this.cbCheckForUPD.UseVisualStyleBackColor = true;
-        	this.cbCheckForUPD.MouseHover += new System.EventHandler(this.CbCheckForUPDMouseHover);
         	// 
         	// cbScrollLight
         	// 
@@ -643,7 +629,6 @@
         private System.Windows.Forms.CheckBox cbOnChange;
         private System.Windows.Forms.Panel pEExtra;
         private System.Windows.Forms.CheckBox cbScrollLight;
-        private System.Windows.Forms.CheckBox cbCheckForUPD;
         private System.Windows.Forms.TextBox tbConMorWor;
         private System.Windows.Forms.Label lbConMorWor;
     }

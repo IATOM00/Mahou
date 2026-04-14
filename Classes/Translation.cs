@@ -7,18 +7,18 @@ namespace Mahou
         #region English
         public static string[] UIEN = new string[] {
           /*///////////////Main UI\\\\\\\\\\\\\\\\\
-          /*00-03*/"View on Github","Autostart with Windows","Update","Hotkeys",
+          /*00-03*/"Mahou","Autostart with Windows","","Hotkeys",
           /*04-06*/"Convert word","Convert selection","Convert line",
           /*07-10*/"CS-Switch","Re-Press","Re-Select","Switch layout by key:",
           /*11-14*/"Block CTRL","Tray icon","Cycle Mode","Emu",
           /*15-16*/"Switch between layouts","Language",
           /*17-20*/"Apply","OK","Cancel","Help",
-          /*///////////////Update UI\\\\\\\\\\\\\\\\\
-          /*21-23*/"Mahou update","Check for Updates","Checking...",
-          /*24-28*/"Release","Version","Title","Description","Update Mahou to ",
-          /*29-32*/"Downloading","Timed out...","Error","You have latest version.",
-          /*33-34*/"I think you need to update...","Error occured during check...",
-          /*35-35*/"Failed to get Update info, can't connent to 'github.com', check your internet connection or proxy configuration.",
+          /*///////////////Reserved legacy UI\\\\\\\\\\\\\\\\\
+          /*21-23*/"","","",
+          /*24-28*/"","","","","",
+          /*29-32*/"","","","",
+          /*33-34*/"","",
+          /*35-35*/"",
           /*///////////////MoreConfigs UI\\\\\\\\\\\\\\\\\
           /*36-36*/"Use specific layout changing by Left/Right CTRLS",
           /*37-39*/"LCtrl switches to:","RCtrl switches to:","More configs",
@@ -27,13 +27,13 @@ namespace Mahou
           /*42-44*/"Show/Hide","Exit","Mahou (魔法)\nA magical layout switcher.",
           /*///////////////Back to MoreConfigs UI\\\\\\\\\\\\\\\\\
           /*45-47*/"Display language:","Refresh rate(ms):", "Colors:",
-          /*///////////////Back to Update UI\\\\\\\\\\\\\\\\\
-          /*48-51*/"Proxy","Server:port","Name/Password","Your proxy not working...",
+          /*///////////////Reserved legacy UI\\\\\\\\\\\\\\\\\
+          /*48-51*/"","","","",
           /*///////////////Back to MoreConfigs UI\\\\\\\\\\\\\\\\\
           /*52-58*/"Font","Size:","Position:", "More", "Back","Double hotkey:","Delay:",
   	      /*59-60*/"Experimental CS-Switch+","Transparent background in language tooltip",
   	      /*61-63*/"Use snippets", "On change","Highlight ScrollLock when language 1 is active.",
-          /*64-65*/"Enable check for updates at startup.","Convert multiple words hotkey:"};
+          /*64-65*/"Convert multiple words hotkey:",""};
         public static string[] ToolTipsEN = new string[] {
           /*///////////////Main TT\\\\\\\\\\\\\\\\\
           /*00*/"While this option enabled, [Convert word] and [Convert line] and [Convert selection with \"CS-Switch\" enabled]\n"+
@@ -43,9 +43,9 @@ namespace Mahou
           /*01*/"This is current hotkey for \"Convert word\".\nPress any key to assign it, or key with modifiers(ALT,CTRL,SHIFT).",
           /*02*/"This is current hotkey for \"Convert selection\".\nPress any key to assign it, or key with modifiers(ALT,CTRL,SHIFT).",
           /*03*/"This is current hotkey for \"Convert line\".\nPress any key to assign it, or key with modifiers(ALT,CTRL,SHIFT)",
-          /*04*/"Go to GitHub repository to view source or report issue.",
+          /*04*/"Mahou.",
           /*05*/"Toggles visibility of icon in a tray.\nIf it is hidden, to show configs window hit CTRL+ALT+SHIFT+INSERT or just run Mahou.exe again.",
-          /*06*/"Check for updates, and update if needed.",
+          /*06*/"",
           /*07*/"Blocks hotkeys that use Control,\nwhen \"Switch layout by key\" is set to Left/Right Control.",
           /*08*/"Switching layout depends on \"Cycle Mode\" & \"Emu\" options.",
           /*09*/"If this option enabled, Cycle Mode will use Emulation of Alt+Shift/Win+Space instead \"sending window message\" that changes layout.",
@@ -75,9 +75,9 @@ namespace Mahou
           /*31*/"If this enabled, pressing Space will expand small (which starts with \"->\") word, to big (which is between \"====>\" and \"<====\") word/text fragment.",
           /*32*/"Display language tooltip only on layout change.\nTime of displaying is 7x[Refresh rate].",
           /*33*/"Highlight Scroll Lock when active language 1, selected in main window.",
-          /*34-35*/"If enabled Mahou will check for updates at startup.", "Allow to convert specific last word count by pressing hotkey and then 1-9 on keyboard."};
+          /*34-35*/"Allow to convert specific last word count by pressing hotkey and then 1-9 on keyboard.", ""};
         public static string[] MessagesEN = new string[] {
-          /*00-01*/"Mahou successfully updated!", "Update complete!",
+          /*00-01*/"", "",
           /*0002*/"Press Pause(by Default) to convert last inputted word.\nPress Scroll(by Default) while selected text is focused to convert it.\nPress Shift+Pause(by Default) to convert last inputted line.\n"+
           "Press Ctrl+Alt+Shift+Insert to show Mahou main window.\nPress Ctrl+Alt+Shift+F12 to shutdown Mahou.\n\n*Note that if you typing in not of selected in settings layouts(locales/languages), conversion will switch typed text to Language 1(Ignored if Cycle Mode is ON).\n\n"+
           "**If you have problems with symbols conversion(selection) try \"switching languages (1=>2 & 2=>1)\" or \"CS-Switch\" option.\n\nHover on any control of main window for more info about it.\n\n"+
@@ -91,18 +91,18 @@ namespace Mahou
         #region Русский
         public static string[] UIRU = new string[] {
           /*///////////////Main UI\\\\\\\\\\\\\\\
-          /*00-03*/"Код на Github","Автозапуск с Windows","Обновить","Горячие клавиши",
+          /*00-03*/"Mahou","Автозапуск с Windows","","Горячие клавиши",
           /*04-06*/"Конверт слова","Конверт выделения", "Конверт линии",
           /*07-10*/"КВ-Ключ","Пере-наж.","Пере-выдел.","Сменить язык клавишой:",
           /*11-14*/"Игнор. CTRL","Иконка трея","Циклч. режим","Эму",
           /*15-16*/"Конверт между языками","Язык",
           /*17-20*/"Применить","OK","Отмена","Помощь",
-          /*///////////////Update UI\\\\\\\\\\\\\\\
-          /*21-23*/"Mahou обновления","Проверить обновления","Проверяю...",
-          /*24-28*/"Релиза","Версия","Заголовок","Описание","Обновить Mahou к ",
-          /*29-32*/"Загружаю","Превышено время ожидания...","Ошибка","У вас последняя версия.",
-          /*33-34*/"Я думаю следует обновиться...","Произошла ошибка при проверке...",
-          /*35-35*/"Не получилось получить информацию о обновлениях, не могу соединится с 'github.com', проверьте ваше соединение с интернетом или настройки прокси.",
+          /*///////////////Reserved legacy UI\\\\\\\\\\\\\\\
+          /*21-23*/"","","",
+          /*24-28*/"","","","","",
+          /*29-32*/"","","","",
+          /*33-34*/"","",
+          /*35-35*/"",
           /*///////////////MoreConfigs UI\\\\\\\\\\\\\\\
           /*36-36*/"Использовать спец. переключение по L/R CTRL",
           /*37-39*/"LCtrl переключает в:","RCtrl переключает в:","Дополнительные настройки",
@@ -111,13 +111,13 @@ namespace Mahou
           /*42-44*/"Показать/Скрыть","Выход","Mahou (魔法)\nВолшебный переключатель раскладок.",
           /*///////////////Back to MoreConfigs UI\\\\\\\\\\\\\\\\\
           /*45-47*/"Отображ. язык:","Скор. обнов.(мс):", "Цвета:",
-          /*///////////////Back to Update UI\\\\\\\\\\\\\\\\\
-          /*48-51*/"Прокси","Сервер:порт","Имя/Пароль","Ваш прокси не работает...",
+          /*///////////////Reserved legacy UI\\\\\\\\\\\\\\\\\
+          /*48-51*/"","","","",
           /*///////////////Back to MoreConfigs UI\\\\\\\\\\\\\\\\\
           /*52-58*/"Шрифт","Размер:","Позиция:", "Еще", "Назад", "Двойные гор. клавиши:", "Ожидание:",
   	      /*59-60*/"Экспериментальный КВ-Ключ+","Прозрачный фон в подсказке языка",
   	      /*61-63*/"Использовать сниппеты","При смене","Подсвечивать ScrollLock когда язык 1 активен.",
-          /*64-65*/"Проверять обновления при запуске.", "Конверт нескольких последних слов гор. клав.:"};
+          /*64-65*/"Конверт нескольких последних слов гор. клав.:", ""};
         public static string[] ToolTipsRU = new string[] {
           /*///////////////Main TT\\\\\\\\\\\\\\\\\
           /*00*/"Пока включена, [Конверт слова] and [Конверт линии] and [Конверт выделения с \"КВ-Ключ\" включенной]\n"+
@@ -127,9 +127,9 @@ namespace Mahou
           /*01*/"Текущая горячая клавиша для \"Конверт слова\".\nНажмите любую клавишу чтобы назначить её, или клавишу с модификаторами(ALT,CTRL,SHIFT).",
           /*02*/"Текущая горячая клавиша для \"Конверт выделения\".\nНажмите любую клавишу чтобы назначить её, или клавишу с модификаторами(ALT,CTRL,SHIFT).",
           /*03*/"Текущая горячая клавиша для \"Конверт линии\".\nНажмите любую клавишу чтобы назначить её, или клавишу с модификаторами(ALT,CTRL,SHIFT).",
-          /*04*/"Открыть репозиторий на GitHub чтобы посмотреть исходный код или сообщить об ошибке.",
+          /*04*/"Mahou.",
           /*05*/"Переключает видимость иконки в трее.\nЕсли скрыта то чтобы показать главное окно нажмите CTRL+ALT+SHIFT+INSERT или просто запустите Mahou.exe опять.",
-          /*06*/"Проверить обновления, и обновиться если требуется.",
+          /*06*/"",
           /*07 */"Игнорирует горячую клавишу которая использует Control,\nкогда \"Сменить язык клавишой\" установлен на Left/Right Control.",
           /*08*/"Тип переключения зависит от \"Циклч. режим\" и \"Эму\".",
           /*09*/"Если включеня, Циклч. режим будет испльзовать Эмуляцию нажатия Alt+Shift/Win+Space вместо \"посылания сообщения окну\" которое переключает раскладку.",
@@ -158,9 +158,9 @@ namespace Mahou
           /*31*/"Если включено, нажатие Space превратит маленькое (то что начинается с \"->\") слово, в большое(то что между \"====>\" и \"<====\") слово/кусок текста.",
           /*32*/"Показывает подсказку только при смене языка.\nВремя отображения = 7x[Скор. обнов.].",
           /*33*/"Подсвечивает лампочку Scroll Lock при активации языка 1, выбранного в главном окне.",
-          /*34-35*/"Если включено Mahou будет проверять обновления при запуске.", "Позволяет конвертировать выбранное количество последних слов нажатием горячей клавиши, а потом 1-9 на клавиатуре."};
+          /*34-35*/"Позволяет конвертировать выбранное количество последних слов нажатием горячей клавиши, а потом 1-9 на клавиатуре.", ""};
         public static string[] MessagesRU = new string[] {
-          /*00-01*/"Mahou успешно обновлен!", "Обновление завершено!",
+          /*00-01*/"", "",
           /*0002*/"Нажмите Pause(по умолчанию) для конвертации последнего введенного слова.\nНажмите Scroll(по умолчанию) пока выделенный текс в фокусе чтобы конвертивровать его.\nНажмите Shift+Pause(по умолчанию) для конвертации последней введенной линии.\n"+
           "Нажмите Ctrl+Alt+Shift+Insert чтобы показать/скрыть главное окно.\nНажмите Ctrl+Alt+Shift+F12 чтобы завершить Mahou.\n\n*Заметьте что если you вводите текст не из выбранных раскладок в настройках, то конвертация конвертирует текст в Язык 1(Не актуально если включен Циклич. режим).\n\n"+
           "**Если у Вас проблемы с символами при Конвертации выделения попробуйте \"перключить языки местами(1=>2 & 2=>1)\" или включите \"КВ-Ключ\".\n\nНаведите мышь на любой элемент главного онка чтобы узнать подробнее о нем.\n\n"+

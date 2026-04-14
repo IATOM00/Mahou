@@ -52,11 +52,6 @@ namespace Mahou {
 					mahou.icon.RefreshText(MMain.UI[44], MMain.UI[42], MMain.UI[43]);
 					KMHook.ReInitSnippets();
 					Application.EnableVisualStyles(); // Huh i did not noticed that it was missing... '~'
-					if(args.Length != 0)
-						if(args[0] == "_!_updated_!_") {
-							mahou.ToggleVisibility();
-							MessageBox.Show(Msgs[0], Msgs[1], MessageBoxButtons.OK, MessageBoxIcon.Information);
-						}
 					StartHook();
 					//for first run, add your locale 1 & locale 2 to settings
 					if(MyConfs.Read("Locales", "locale1Lang") == "" && MyConfs.Read("Locales", "locale2Lang") == "") {

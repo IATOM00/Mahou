@@ -1,7 +1,9 @@
-/Mahou/bin/*
-/Mahou/obj/*
-/Mahou/*.suo
-/Mahou/*.user
-/Mahou/.vs/*
-
-packages
+/bin/
+/obj/
+/.vs/
+*.suo
+*.user
+/packages/
+/nuget.exe
+/Mahou.ini
+/snippets.txt

@@ -23,7 +23,6 @@ namespace Mahou
 		Locales.Locale tempLoc1 = new Locales.Locale { Lang = "dummy", uId = 0 },
 			tempLoc2 = new Locales.Locale { Lang = "dummy", uId = 0	};
 		public TrayIcon icon;
-		public Update update = new Update();
 		public Timer ICheck = new Timer();
 		public Timer ScrlCheck = new Timer();
 		public LangDisplay langDisplay = new LangDisplay();
@@ -110,12 +109,6 @@ namespace Mahou
 			RegisterHotKey(Handle, 0xffff ^ 0xffff, 0, 0); //HWND must be this form handle
 			RefreshIconAll();
 			InitializeHotkeys();
-			//Background startup check for updates
-			if (MMain.MyConfs.ReadBool("Functions", "UpdatesEnabled")) {
-				var uche = new System.Threading.Thread(update.StartupCheck);
-				uche.Name = "Startup Check";
-				uche.Start();
-			}
 		}
 		#region Form Events
 		void MahouForm_Load(object sender, EventArgs e)
@@ -286,14 +279,6 @@ namespace Mahou
 		{
 			messagebox = true;
 			MessageBox.Show(MMain.Msgs[2], MMain.Msgs[3], MessageBoxButtons.OK, MessageBoxIcon.Information);
-		}
-		void GitHubLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-		{
-			System.Diagnostics.Process.Start("https://github.com/BladeMight/Mahou");
-		}
-		void btnUpd_Click(object sender, EventArgs e)
-		{
-			update.ShowDialog();
 		}
 		void btnDDD_Click(object sender, EventArgs e)
 		{
@@ -518,7 +503,7 @@ namespace Mahou
 		public void ToggleVisibility() //Toggles visibility of main window
 		{
 			if (Visible != false)
-				Visible = moreConfigs.Visible = update.Visible = false;
+				Visible = moreConfigs.Visible = false;
 			else {
 				TopMost = true;
 				Visible = true;
@@ -598,9 +583,7 @@ namespace Mahou
 		}
 		void RefreshLanguage() //Refreshed in realtime all controls text
 		{
-			GitHubLink.Text = MMain.UI[0];
 			cbAutorun.Text = MMain.UI[1];
-			btnUpd.Text = MMain.UI[2];
 			gbHK.Text = MMain.UI[3];
 			cbCLActive.Text = MMain.UI[4] + ":";
 			cbCSActive.Text = MMain.UI[5] + ":";
@@ -699,20 +682,10 @@ namespace Mahou
 			HelpTT.ToolTipTitle = tbCLineHK.Text;
 			HelpTT.Show(MMain.TTips[3], tbCLineHK);
 		}
-		void GitHubLink_MouseHover(object sender, EventArgs e)
-		{
-			HelpTT.ToolTipTitle = GitHubLink.Text;
-			HelpTT.Show(MMain.TTips[4], GitHubLink);
-		}
 		void TrayIconCheckBox_MouseHover(object sender, EventArgs e)
 		{
 			HelpTT.ToolTipTitle = cbTrayIcon.Text;
 			HelpTT.Show(MMain.TTips[5], cbTrayIcon);
-		}
-		void btnUpd_MouseHover(object sender, EventArgs e)
-		{
-			HelpTT.ToolTipTitle = btnUpd.Text;
-			HelpTT.Show(MMain.TTips[6], btnUpd);
 		}
 		void cbBlockAC_MouseHover(object sender, EventArgs e)
 		{

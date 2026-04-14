@@ -1,7 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Linq;
-using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 
@@ -10,7 +8,7 @@ namespace Mahou
     class Configs
     {
         //Path where Mahou is now + Mahou.ini
-        public static readonly string filePath = Path.Combine(Update.nPath, "Mahou.ini");
+        public static readonly string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Mahou.ini");
         public Configs()//Initializes settings, if some of elements or settinhs file, not exists it creates them with default value
         {
             if (!File.Exists(filePath)) //Create an UTF-16 configuration file
@@ -131,9 +129,6 @@ namespace Mahou
             if (!Boolean.TryParse(this.Read("Functions", "ScrollTip"), out bt))
                 this.Write("Functions", "ScrollTip", "false");
             
-            if (!Boolean.TryParse(this.Read("Functions", "UpdatesEnabled"), out bt))
-                this.Write("Functions", "UpdatesEnabled", "true");
-
             //EnabledHotkeys section
             if (!Boolean.TryParse(this.Read("EnabledHotkeys", "HKCLEnabled"), out bt))
                 this.Write("EnabledHotkeys", "HKCLEnabled", "true"); //Hotkey convert last word enabled
@@ -162,16 +157,6 @@ namespace Mahou
 
             if (String.IsNullOrEmpty(this.Read("ExtCtrls", "RCLocaleName")))
                 this.Write("ExtCtrls", "RCLocaleName", "");
-            
-            //Proxy section
-            if (String.IsNullOrEmpty(this.Read("Proxy", "ServerPort")))
-                this.Write("Proxy", "ServerPort", "");
-            
-            if (String.IsNullOrEmpty(this.Read("Proxy", "UserName")))
-                this.Write("Proxy", "UserName", "");
-            
-            if (String.IsNullOrEmpty(this.Read("Proxy", "Password")))
-                this.Write("Proxy", "Password", "");
             
             //Tooltip UI sections
             if (!Int32.TryParse(this.Read("TTipUI", "Height"), out it))

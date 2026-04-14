@@ -61,16 +61,6 @@ namespace Mahou.Properties {
 		}
 		
 		/// <summary>
-		///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-		/// </summary>
-		public static System.Drawing.Bitmap down_arrow {
-			get {
-				object obj = ResourceManager.GetObject("down_arrow", resourceCulture);
-				return ((System.Drawing.Bitmap)(obj));
-			}
-		}
-		
-		/// <summary>
 		///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
 		/// </summary>
 		public static System.Drawing.Icon Mahou {
@@ -100,14 +90,5 @@ namespace Mahou.Properties {
 			}
 		}
 		
-		/// <summary>
-		///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-		/// </summary>
-		public static System.Drawing.Bitmap up_arrow {
-			get {
-				object obj = ResourceManager.GetObject("up_arrow", resourceCulture);
-				return ((System.Drawing.Bitmap)(obj));
-			}
-		}
 	}
 }

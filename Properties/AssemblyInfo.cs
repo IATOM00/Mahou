@@ -9,10 +9,10 @@ using System.Resources;
 [assembly: AssemblyTitle ("Mahou")]
 [assembly: AssemblyDescription ("A magic layout switcher.")]
 [assembly: AssemblyConfiguration ("")]
-[assembly: AssemblyCompany ("BladeMight")]
+[assembly: AssemblyCompany ("")]
 [assembly: AssemblyProduct ("Mahou")]
-[assembly: AssemblyCopyright ("Copyright © BladeMight 2016")]
-[assembly: AssemblyTrademark ("BM")]
+[assembly: AssemblyCopyright ("Copyright (C) Mahou contributors")]
+[assembly: AssemblyTrademark ("")]
 [assembly: AssemblyCulture ("")]
 // Параметр ComVisible со значением FALSE делает типы в сборке невидимыми 
 // для COM-компонентов.  Если требуется обратиться к типу в этой сборке через 
@@ -33,4 +33,4 @@ using System.Resources;
 [assembly: AssemblyVersion ("1.4.3.0")]
 [assembly: AssemblyFileVersion ("1.4.3.0")]
 [assembly: NeutralResourcesLanguage ("")]
-[assembly: AssemblyDefaultAlias ("BladeMight")]
+[assembly: AssemblyDefaultAlias ("Mahou")]

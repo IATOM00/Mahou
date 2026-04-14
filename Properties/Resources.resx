@@ -1873,20 +1873,4 @@
         AAAf+AAA//8AAA==
 </value>
   </data>
-  <data name="down_arrow" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xMdoNOlYAAABDSURBVChTjYoB
-        CgAgCAP7/6dXSsWYMxIO9bYB4BsrO6zsiFnbh0z07sGBcvIiFPZtYH9+UuyCFtOpSGmKQREvrPRgTBn1
-        U7sbdCRNAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="up_arrow" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xMdoNOlYAAABASURBVChTjYxB
-        DgAgCMP4/6dnMEJUSvTQBLqBSfoGZQfLqcEXsYp0cC5Xoew5wCdn90UQkT+Lgfcw6EDZgZKRDf/kU7ue
-        89+hAAAAAElFTkSuQmCC
-</value>
-  </data>
 </root>
