@@ -1,0 +1,13 @@
+C:\Users\atom\StudioProjects\Mahou\Mahou\obj\Release\Mahou.csprojResolveAssemblyReference.cache
+C:\Users\atom\StudioProjects\Mahou\Mahou\obj\Release\Mahou.LangDisplay.resources
+C:\Users\atom\StudioProjects\Mahou\Mahou\obj\Release\Mahou.MoreConfigs.resources
+C:\Users\atom\StudioProjects\Mahou\Mahou\obj\Release\Mahou.MahouForm.resources
+C:\Users\atom\StudioProjects\Mahou\Mahou\obj\Release\Mahou.Properties.Resources.resources
+C:\Users\atom\StudioProjects\Mahou\Mahou\obj\Release\Mahou.csproj.GenerateResource.Cache
+C:\Users\atom\StudioProjects\Mahou\Mahou\bin\Release\Mahou.exe.config
+C:\Users\atom\StudioProjects\Mahou\Mahou\bin\Release\Mahou.exe
+C:\Users\atom\StudioProjects\Mahou\Mahou\bin\Release\Mahou.pdb
+C:\Users\atom\StudioProjects\Mahou\Mahou\bin\Release\NLog.dll
+C:\Users\atom\StudioProjects\Mahou\Mahou\bin\Release\NLog.xml
+C:\Users\atom\StudioProjects\Mahou\Mahou\obj\Release\Mahou.exe
+C:\Users\atom\StudioProjects\Mahou\Mahou\obj\Release\Mahou.pdb
