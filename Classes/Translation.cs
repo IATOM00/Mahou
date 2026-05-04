@@ -7,7 +7,7 @@ namespace Mahou
         #region English
         public static string[] UIEN = new string[] {
           /*///////////////Main UI\\\\\\\\\\\\\\\\\
-          /*00-03*/"Mahou","Run at startup","","Hotkeys",
+          /*00-03*/"Mahou","Start with Windows","","Hotkeys",
           /*04-06*/"Convert word","Convert selection","Convert line",
           /*07-10*/"CS-Switch","Re-Press","Re-Select","Switch layout by key:",
           /*11-14*/"Block CTRL","Tray icon","Cycle Mode","Emu",
@@ -24,7 +24,7 @@ namespace Mahou
           /*37-39*/"LCtrl switches to:","RCtrl switches to:","More configs",
           /*40-41*/"Symbol Ignore:","More Tries:",
           /*///////////////Tray Icon\\\\\\\\\\\\\\\\\
-          /*42-44*/"Show/Hide","Exit","Mahou\nA magical layout switcher.",
+          /*42-44*/"Show/Hide","Exit","Mahou\nA layout switcher.",
           /*///////////////Back to MoreConfigs UI\\\\\\\\\\\\\\\\\
           /*45-47*/"Display language:","Refresh rate(ms):", "Colors:",
           /*///////////////Reserved legacy UI\\\\\\\\\\\\\\\\\
