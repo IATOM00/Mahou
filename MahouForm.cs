@@ -280,6 +280,11 @@ namespace Mahou
 		}
 		void btnHelp_Click(object sender, EventArgs e)
 		{
+			messagebox = true;
+			MessageBox.Show(MMain.Msgs[2], MMain.Msgs[3], MessageBoxButtons.OK, MessageBoxIcon.Information);
+		}
+		void GitHubLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+		{
 			Process.Start(GitHubUrl);
 		}
 		void btnDDD_Click(object sender, EventArgs e)

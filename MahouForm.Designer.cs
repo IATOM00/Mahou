@@ -60,6 +60,7 @@
         	this.cbELSType = new System.Windows.Forms.ComboBox();
         	this.btnDDD = new System.Windows.Forms.Button();
         	this.btnLangChange = new System.Windows.Forms.Button();
+        	this.GitHubLink = new System.Windows.Forms.LinkLabel();
         	this.gbSBL.SuspendLayout();
         	this.gbHK.SuspendLayout();
         	this.SuspendLayout();
@@ -191,19 +192,31 @@
         	this.btnHelp.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
         	this.btnHelp.Location = new System.Drawing.Point(249, 251);
         	this.btnHelp.Name = "btnHelp";
-        	this.btnHelp.Size = new System.Drawing.Size(93, 23);
+        	this.btnHelp.Size = new System.Drawing.Size(75, 23);
         	this.btnHelp.TabIndex = 15;
         	this.btnHelp.Text = "Help";
         	this.btnHelp.UseVisualStyleBackColor = true;
         	this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
         	// 
+        	// GitHubLink
+        	// 
+        	this.GitHubLink.AutoSize = true;
+        	this.GitHubLink.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+        	this.GitHubLink.Location = new System.Drawing.Point(12, 10);
+        	this.GitHubLink.Name = "GitHubLink";
+        	this.GitHubLink.Size = new System.Drawing.Size(82, 13);
+        	this.GitHubLink.TabIndex = 16;
+        	this.GitHubLink.TabStop = true;
+        	this.GitHubLink.Text = "View in GitHub";
+        	this.GitHubLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.GitHubLink_LinkClicked);
+        	// 
 			// cbAutorun
 			//
 			this.cbAutorun.AutoSize = false;
 			this.cbAutorun.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.cbAutorun.Location = new System.Drawing.Point(12, 8);
+			this.cbAutorun.Location = new System.Drawing.Point(112, 8);
 			this.cbAutorun.Name = "cbAutorun";
-			this.cbAutorun.Size = new System.Drawing.Size(300, 18);
+			this.cbAutorun.Size = new System.Drawing.Size(210, 18);
 			this.cbAutorun.TabIndex = 17;
 			this.cbAutorun.Text = "Start with Windows";
 			this.cbAutorun.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -448,9 +461,10 @@
         	// 
         	this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
         	this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        	this.ClientSize = new System.Drawing.Size(348, 277);
+        	this.ClientSize = new System.Drawing.Size(330, 277);
         	this.Controls.Add(this.btnLangChange);
         	this.Controls.Add(this.btnDDD);
+        	this.Controls.Add(this.GitHubLink);
         	this.Controls.Add(this.gbSBL);
         	this.Controls.Add(this.btnCancel);
         	this.Controls.Add(this.cbELSType);
@@ -523,5 +537,6 @@
         private System.Windows.Forms.ComboBox cbELSType;
         private System.Windows.Forms.Button btnDDD;
         private System.Windows.Forms.Button btnLangChange;
+        private System.Windows.Forms.LinkLabel GitHubLink;
     }
 }
