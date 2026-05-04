@@ -220,7 +220,7 @@
 			this.cbAutorun.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.cbAutorun.Font = new System.Drawing.Font("Segoe UI", 8.75F, (System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.cbAutorun.ForeColor = System.Drawing.Color.SeaGreen;
-			this.cbAutorun.Location = new System.Drawing.Point(185, 7);
+			this.cbAutorun.Location = new System.Drawing.Point(180, 7);
 			this.cbAutorun.Name = "cbAutorun";
 			this.cbAutorun.Size = new System.Drawing.Size(140, 19);
 			this.cbAutorun.TabIndex = 17;
