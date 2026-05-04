@@ -7,7 +7,7 @@ namespace Mahou
         #region English
         public static string[] UIEN = new string[] {
           /*///////////////Main UI\\\\\\\\\\\\\\\\\
-          /*00-03*/"Mahou","Start with Windows","","Hotkeys",
+          /*00-03*/"Mahou","Run at startup","","Hotkeys",
           /*04-06*/"Convert word","Convert selection","Convert line",
           /*07-10*/"CS-Switch","Re-Press","Re-Select","Switch layout by key:",
           /*11-14*/"Block CTRL","Tray icon","Cycle Mode","Emu",
@@ -91,7 +91,7 @@ namespace Mahou
         #region Русский
         public static string[] UIRU = new string[] {
           /*///////////////Main UI\\\\\\\\\\\\\\\
-          /*00-03*/"Mahou","Запускать вместе с Windows","","Горячие клавиши",
+          /*00-03*/"Mahou","Автозапуск с Windows","","Горячие клавиши",
           /*04-06*/"Конверт слова","Конверт выделения", "Конверт линии",
           /*07-10*/"КВ-Ключ","Пере-наж.","Пере-выдел.","Сменить язык клавишой:",
           /*11-14*/"Игнор. CTRL","Иконка трея","Циклч. режим","Эму",

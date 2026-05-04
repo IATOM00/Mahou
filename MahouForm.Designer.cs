@@ -200,25 +200,30 @@
         	// 
         	// GitHubLink
         	// 
+        	this.GitHubLink.ActiveLinkColor = System.Drawing.SystemColors.Highlight;
         	this.GitHubLink.AutoSize = true;
         	this.GitHubLink.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-        	this.GitHubLink.Location = new System.Drawing.Point(12, 10);
+        	this.GitHubLink.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+        	this.GitHubLink.LinkColor = System.Drawing.SystemColors.HotTrack;
+        	this.GitHubLink.Location = new System.Drawing.Point(12, 9);
         	this.GitHubLink.Name = "GitHubLink";
-        	this.GitHubLink.Size = new System.Drawing.Size(82, 13);
+        	this.GitHubLink.Size = new System.Drawing.Size(86, 13);
         	this.GitHubLink.TabIndex = 16;
         	this.GitHubLink.TabStop = true;
-        	this.GitHubLink.Text = "View in GitHub";
+        	this.GitHubLink.Text = "View on GitHub";
+        	this.GitHubLink.VisitedLinkColor = System.Drawing.SystemColors.HotTrack;
         	this.GitHubLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.GitHubLink_LinkClicked);
         	// 
 			// cbAutorun
 			//
-			this.cbAutorun.AutoSize = false;
+			this.cbAutorun.AutoSize = true;
+			this.cbAutorun.CheckAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.cbAutorun.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.cbAutorun.Location = new System.Drawing.Point(112, 8);
+			this.cbAutorun.Location = new System.Drawing.Point(106, 8);
 			this.cbAutorun.Name = "cbAutorun";
-			this.cbAutorun.Size = new System.Drawing.Size(210, 18);
+			this.cbAutorun.Size = new System.Drawing.Size(120, 17);
 			this.cbAutorun.TabIndex = 17;
-			this.cbAutorun.Text = "Start with Windows";
+			this.cbAutorun.Text = "Run at startup";
 			this.cbAutorun.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.cbAutorun.UseVisualStyleBackColor = true;
         	// 
