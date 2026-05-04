@@ -1,2 +1,24 @@
-;; @%windir%\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe "%~dp0Mahou.sln" /t:Build /p:Configuration=Release /p:Platform=x86 /m
-& "$env:windir\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe" .\Mahou.sln /t:Build /p:Configuration=Release /p:Platform=x86 /m
+@echo off
+setlocal
+
+set "ROOT=%~dp0"
+set "SLN=%ROOT%Mahou.sln"
+set "MSBUILD=%windir%\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe"
+
+if not exist "%SLN%" (
+    echo Solution file not found: "%SLN%"
+    exit /b 1
+)
+
+if not exist "%MSBUILD%" (
+    echo MSBuild not found: "%MSBUILD%"
+    exit /b 1
+)
+
+pushd "%ROOT%" || exit /b 1
+echo Building "%SLN%"
+"%MSBUILD%" "%SLN%" /t:Rebuild /p:Configuration=Release /p:Platform=x86 /m
+set "BUILD_EXIT=%ERRORLEVEL%"
+popd
+
+exit /b %BUILD_EXIT%

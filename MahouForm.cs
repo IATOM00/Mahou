@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Diagnostics;
 using System.Windows.Forms;
 using System.Reflection;
 using System.Runtime.InteropServices;
@@ -7,6 +8,8 @@ namespace Mahou
 {
 	public partial class MahouForm : Form
 	{
+		const string GitHubUrl = "https://github.com/IATOM00/Mahou";
+
 		#region DLL (dummy hotkey)
 		[DllImport("user32.dll")]
 		public static extern bool RegisterHotKey(IntPtr hWnd, int id, uint fsModifiers, int vk);
@@ -277,8 +280,7 @@ namespace Mahou
 		}
 		void btnHelp_Click(object sender, EventArgs e)
 		{
-			messagebox = true;
-			MessageBox.Show(MMain.Msgs[2], MMain.Msgs[3], MessageBoxButtons.OK, MessageBoxIcon.Information);
+			Process.Start(GitHubUrl);
 		}
 		void btnDDD_Click(object sender, EventArgs e)
 		{
@@ -622,18 +624,17 @@ namespace Mahou
 		void CreateShortcut() //Creates startup shortcut v2.0, now not uses com. So whole project not need the Windows SDK :p
 		{
 			var exelocation = Assembly.GetExecutingAssembly().Location;
+			var workingDirectory = System.IO.Path.GetDirectoryName(exelocation);
 			var shortcutLocation = System.IO.Path.Combine(
 				                       Environment.GetFolderPath(Environment.SpecialFolder.Startup),
 				                       "Mahou.lnk");
-			if (System.IO.File.Exists(shortcutLocation))
-				return;
 			Type t = Type.GetTypeFromCLSID(new Guid("72C24DD5-D70A-438B-8A42-98424B88AFB8")); //Windows Script Host Shell Object
 			dynamic shell = Activator.CreateInstance(t);
 			try {
 				var lnk = shell.CreateShortcut(shortcutLocation);
 				try {
 					lnk.TargetPath = exelocation;
-					lnk.WorkingDirectory = System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+					lnk.WorkingDirectory = workingDirectory;
 					lnk.IconLocation = exelocation + ", 0";
 					lnk.Description = "Mahou - Magick layout switcher";
 					lnk.Save();

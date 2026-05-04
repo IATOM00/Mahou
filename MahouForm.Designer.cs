@@ -191,7 +191,7 @@
         	this.btnHelp.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
         	this.btnHelp.Location = new System.Drawing.Point(249, 251);
         	this.btnHelp.Name = "btnHelp";
-        	this.btnHelp.Size = new System.Drawing.Size(75, 23);
+        	this.btnHelp.Size = new System.Drawing.Size(93, 23);
         	this.btnHelp.TabIndex = 15;
         	this.btnHelp.Text = "Help";
         	this.btnHelp.UseVisualStyleBackColor = true;
@@ -448,7 +448,7 @@
         	// 
         	this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
         	this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        	this.ClientSize = new System.Drawing.Size(330, 277);
+        	this.ClientSize = new System.Drawing.Size(348, 277);
         	this.Controls.Add(this.btnLangChange);
         	this.Controls.Add(this.btnDDD);
         	this.Controls.Add(this.gbSBL);
