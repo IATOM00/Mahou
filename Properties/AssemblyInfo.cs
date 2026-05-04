@@ -3,9 +3,8 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Resources;
 
-// Управление общими сведениями о сборке осуществляется с помощью 
-// набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
-// связанные со сборкой.
+// General assembly information is controlled through the following
+// attributes. Change these values to update assembly metadata.
 [assembly: AssemblyTitle ("Mahou")]
 [assembly: AssemblyDescription ("A magic layout switcher.")]
 [assembly: AssemblyConfiguration ("")]
@@ -14,21 +13,21 @@ using System.Resources;
 [assembly: AssemblyCopyright ("Copyright (C) Mahou contributors")]
 [assembly: AssemblyTrademark ("")]
 [assembly: AssemblyCulture ("")]
-// Параметр ComVisible со значением FALSE делает типы в сборке невидимыми 
-// для COM-компонентов.  Если требуется обратиться к типу в этой сборке через 
-// COM, задайте атрибуту ComVisible значение TRUE для этого типа.
+// Setting ComVisible to false makes the types in this assembly invisible
+// to COM components. Set ComVisible to true on any type that must be
+// exposed to COM.
 [assembly: ComVisible (false)]
-// Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
+// The following GUID identifies the type library if this project is exposed to COM.
 [assembly: Guid ("ec511418-1d57-4dbe-a0c3-c6022b33735b")]
-// Сведения о версии сборки состоят из следующих четырех значений:
+// Assembly version information consists of the following four values:
 //
-//      Основной номер версии
-//      Дополнительный номер версии 
-//      Номер построения
-//      Редакция
+//      Major Version
+//      Minor Version
+//      Build Number
+//      Revision
 //
-// Можно задать все значения или принять номер построения и номер редакции по умолчанию, 
-// используя "*", как показано ниже:
+// You can specify all values, or default the Build and Revision numbers
+// by using "*", as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion ("3.2.0.147")]
 [assembly: AssemblyFileVersion ("3.4.3.0")]

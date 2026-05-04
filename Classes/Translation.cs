@@ -88,7 +88,7 @@ namespace Mahou
 		  /*10-11*/"Snippets configured wrong...", "Mahou snippets error!",
           /*12-13*/"Using CapsLock with CapsLock assigned as [Switch Only Key] will produce issues, disable [Switch Only Key] feature or assign it to another key.","Hotkey with CapsLock warning!"};
         #endregion
-        #region Русский
+        #region Russian
         public static string[] UIRU = new string[] {
           /*///////////////Main UI\\\\\\\\\\\\\\\
           /*00-03*/"Mahou","Автозапуск с Windows","","Горячие клавиши",
