@@ -202,8 +202,8 @@
         	// 
         	this.GitHubLink.ActiveLinkColor = System.Drawing.SystemColors.Highlight;
         	this.GitHubLink.AutoSize = true;
-        	this.GitHubLink.Font = new System.Drawing.Font("Segoe UI", 8.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-        	this.GitHubLink.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+        	this.GitHubLink.Font = new System.Drawing.Font("Segoe UI", 8.75F, (System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+        	this.GitHubLink.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
         	this.GitHubLink.LinkColor = System.Drawing.SystemColors.HotTrack;
         	this.GitHubLink.Location = new System.Drawing.Point(12, 8);
         	this.GitHubLink.Name = "GitHubLink";
@@ -218,9 +218,9 @@
 			//
 			this.cbAutorun.AutoSize = false;
 			this.cbAutorun.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.cbAutorun.Font = new System.Drawing.Font("Segoe UI", 8.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.cbAutorun.Font = new System.Drawing.Font("Segoe UI", 8.75F, (System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.cbAutorun.ForeColor = System.Drawing.Color.SeaGreen;
-			this.cbAutorun.Location = new System.Drawing.Point(190, 7);
+			this.cbAutorun.Location = new System.Drawing.Point(190, 9);
 			this.cbAutorun.Name = "cbAutorun";
 			this.cbAutorun.Size = new System.Drawing.Size(135, 19);
 			this.cbAutorun.TabIndex = 17;
