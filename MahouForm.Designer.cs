@@ -220,9 +220,9 @@
 			this.cbAutorun.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.cbAutorun.Font = new System.Drawing.Font("Segoe UI", 8.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.cbAutorun.ForeColor = System.Drawing.Color.SeaGreen;
-			this.cbAutorun.Location = new System.Drawing.Point(150, 7);
+			this.cbAutorun.Location = new System.Drawing.Point(190, 7);
 			this.cbAutorun.Name = "cbAutorun";
-			this.cbAutorun.Size = new System.Drawing.Size(170, 19);
+			this.cbAutorun.Size = new System.Drawing.Size(135, 19);
 			this.cbAutorun.TabIndex = 17;
 			this.cbAutorun.Text = "Start with Windows";
 			this.cbAutorun.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
