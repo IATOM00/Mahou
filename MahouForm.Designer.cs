@@ -207,7 +207,7 @@
         	this.GitHubLink.LinkColor = System.Drawing.SystemColors.HotTrack;
         	this.GitHubLink.Location = new System.Drawing.Point(12, 8);
         	this.GitHubLink.Name = "GitHubLink";
-        	this.GitHubLink.Size = new System.Drawing.Size(94, 15);
+        	this.GitHubLink.Size = new System.Drawing.Size(97, 15);
         	this.GitHubLink.TabIndex = 16;
         	this.GitHubLink.TabStop = true;
         	this.GitHubLink.Text = "View on GitHub";
