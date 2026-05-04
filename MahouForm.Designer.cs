@@ -204,14 +204,14 @@
         	this.GitHubLink.AutoSize = true;
         	this.GitHubLink.Font = new System.Drawing.Font("Segoe UI", 8.75F, (System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
         	this.GitHubLink.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
-        	this.GitHubLink.LinkColor = System.Drawing.SystemColors.HotTrack;
+        	this.GitHubLink.LinkColor = System.Drawing.Color.DarkBlue;
         	this.GitHubLink.Location = new System.Drawing.Point(12, 8);
         	this.GitHubLink.Name = "GitHubLink";
         	this.GitHubLink.Size = new System.Drawing.Size(97, 15);
         	this.GitHubLink.TabIndex = 16;
         	this.GitHubLink.TabStop = true;
         	this.GitHubLink.Text = "View on GitHub";
-        	this.GitHubLink.VisitedLinkColor = System.Drawing.SystemColors.HotTrack;
+        	this.GitHubLink.VisitedLinkColor = System.Drawing.Color.DarkBlue;
         	this.GitHubLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.GitHubLink_LinkClicked);
         	// 
 			// cbAutorun
