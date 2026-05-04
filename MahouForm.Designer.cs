@@ -197,16 +197,17 @@
         	this.btnHelp.UseVisualStyleBackColor = true;
         	this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
         	// 
-        	// cbAutorun
-        	// 
-        	this.cbAutorun.AutoSize = true;
-        	this.cbAutorun.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.cbAutorun.Location = new System.Drawing.Point(11, 9);
-        	this.cbAutorun.Name = "cbAutorun";
-        	this.cbAutorun.Size = new System.Drawing.Size(152, 17);
-        	this.cbAutorun.TabIndex = 17;
-        	this.cbAutorun.Text = "Autostart with Windows";
-        	this.cbAutorun.UseVisualStyleBackColor = true;
+			// cbAutorun
+			//
+			this.cbAutorun.AutoSize = false;
+			this.cbAutorun.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.cbAutorun.Location = new System.Drawing.Point(12, 8);
+			this.cbAutorun.Name = "cbAutorun";
+			this.cbAutorun.Size = new System.Drawing.Size(300, 18);
+			this.cbAutorun.TabIndex = 17;
+			this.cbAutorun.Text = "Start with Windows";
+			this.cbAutorun.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.cbAutorun.UseVisualStyleBackColor = true;
         	// 
         	// gbSBL
         	// 
