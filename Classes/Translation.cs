@@ -24,7 +24,7 @@ namespace Mahou
           /*37-39*/"LCtrl switches to:","RCtrl switches to:","More configs",
           /*40-41*/"Symbol Ignore:","More Tries:",
           /*///////////////Tray Icon\\\\\\\\\\\\\\\\\
-          /*42-44*/"Show/Hide","Exit","Mahou\nA layout switcher.",
+          /*42-44*/"Show/Hide","Exit","Mahou\nLayout switcher.",
           /*///////////////Back to MoreConfigs UI\\\\\\\\\\\\\\\\\
           /*45-47*/"Display language:","Refresh rate(ms):", "Colors:",
           /*///////////////Reserved legacy UI\\\\\\\\\\\\\\\\\

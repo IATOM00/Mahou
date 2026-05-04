@@ -20,7 +20,7 @@ namespace Mahou
             ShHi = new MenuItem("Show/Hide", ShowHideHandler);
             cMenu.MenuItems.Add(ShHi);
             cMenu.MenuItems.Add(Exi);
-            trIcon.Text = "Mahou\nA layout switcher.";
+            trIcon.Text = "Mahou\nLayout switcher.";
             trIcon.ContextMenu = cMenu;
             trIcon.MouseDoubleClick += ShowHideHandler;
             trIcon.BalloonTipClicked += ExitHandler;
