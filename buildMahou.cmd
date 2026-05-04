@@ -8,6 +8,19 @@ set "MSBUILD=%windir%\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe"
 echo Stopping running Mahou.exe instances, if any...
 taskkill /f /im Mahou.exe >nul 2>nul
 
+set "MAHOU_WAIT=0"
+:wait_for_mahou_exit
+tasklist /fi "imagename eq Mahou.exe" 2>nul | find /i "Mahou.exe" >nul
+if errorlevel 1 goto mahou_stopped
+timeout /t 1 /nobreak >nul
+set /a MAHOU_WAIT+=1
+if %MAHOU_WAIT% lss 10 goto wait_for_mahou_exit
+
+echo Mahou.exe is still running. Close it manually or run this script as administrator.
+exit /b 1
+
+:mahou_stopped
+
 if exist "%ROOT%bin" rd /q /s "%ROOT%bin"
 if exist "%ROOT%obj" rd /q /s "%ROOT%obj"
 

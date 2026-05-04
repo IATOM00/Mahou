@@ -15,6 +15,7 @@ namespace Mahou
             {
                 File.WriteAllText(filePath, "!Unicode(✔), Mahou settings file", Encoding.Unicode);
             }
+            HideSettingsFile();
             int it = 0;      //int temp
             uint uit = 0;    //uint temp
             bool bt = false; //bool temp
@@ -205,6 +206,13 @@ namespace Mahou
             var SB = new StringBuilder(255);
             int i = GetPrivateProfileString(section, key, "", SB, 255, filePath);
             return Boolean.Parse(SB.ToString().ToLower());
+        }
+        static void HideSettingsFile()
+        {
+            if (!File.Exists(filePath))
+                return;
+
+            File.SetAttributes(filePath, File.GetAttributes(filePath) | FileAttributes.Hidden);
         }
         #region Dll imports
         [DllImport("kernel32", CharSet = CharSet.Unicode)]
