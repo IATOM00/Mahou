@@ -24,7 +24,7 @@ namespace Mahou
           /*37-39*/"LCtrl switches to:","RCtrl switches to:","More configs",
           /*40-41*/"Symbol Ignore:","More Tries:",
           /*///////////////Tray Icon\\\\\\\\\\\\\\\\\
-          /*42-44*/"Show/Hide","Exit","Mahou (魔法)\nA magical layout switcher.",
+          /*42-44*/"Show/Hide","Exit","Mahou\nA magical layout switcher.",
           /*///////////////Back to MoreConfigs UI\\\\\\\\\\\\\\\\\
           /*45-47*/"Display language:","Refresh rate(ms):", "Colors:",
           /*///////////////Reserved legacy UI\\\\\\\\\\\\\\\\\
@@ -108,7 +108,7 @@ namespace Mahou
           /*37-39*/"LCtrl переключает в:","RCtrl переключает в:","Дополнительные настройки",
           /*40-41*/"Игнор. символов:","Больше попыток:",
           /*///////////////Tray Icon\\\\\\\\\\\\\\\
-          /*42-44*/"Показать/Скрыть","Выход","Mahou (魔法)\nВолшебный переключатель раскладок.",
+          /*42-44*/"Показать/Скрыть","Выход","Mahou\nВолшебный переключатель раскладок.",
           /*///////////////Back to MoreConfigs UI\\\\\\\\\\\\\\\\\
           /*45-47*/"Отображ. язык:","Скор. обнов.(мс):", "Цвета:",
           /*///////////////Reserved legacy UI\\\\\\\\\\\\\\\\\
