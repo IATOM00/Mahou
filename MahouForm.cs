@@ -293,12 +293,12 @@ namespace Mahou
 		}
 		void btnLangChange_Click(object sender, EventArgs e)
 		{
-			if (MMain.MyConfs.Read("Locales", "LANGUAGE") == "RU") {
+			if (MMain.MyConfs.Read("Locales", "LANGUAGE") == "UA") {
 				MMain.MyConfs.Write("Locales", "LANGUAGE", "EN");
 				btnLangChange.Text = "EN";
 			} else if (MMain.MyConfs.Read("Locales", "LANGUAGE") == "EN") {
-				MMain.MyConfs.Write("Locales", "LANGUAGE", "RU");
-				btnLangChange.Text = "RU";
+				MMain.MyConfs.Write("Locales", "LANGUAGE", "UA");
+				btnLangChange.Text = "UA";
 			}
 			MMain.InitLanguage();
 			RefreshLanguage();

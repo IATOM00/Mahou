@@ -71,7 +71,7 @@ namespace Mahou {
 			}
 		}
 		public static void InitLanguage() {
-			if(MyConfs.Read("Locales", "LANGUAGE") == "RU") {
+			if(MyConfs.Read("Locales", "LANGUAGE") == "UA") {
 				UI = Translation.UIRU;
 				TTips = Translation.ToolTipsRU;
 				Msgs = Translation.MessagesRU;

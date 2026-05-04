@@ -219,7 +219,7 @@
 			this.cbAutorun.AutoSize = false;
 			this.cbAutorun.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.cbAutorun.Font = new System.Drawing.Font("Segoe UI", 8.75F, (System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.cbAutorun.ForeColor = System.Drawing.Color.SeaGreen;
+			this.cbAutorun.ForeColor = System.Drawing.Color.DarkGreen;
 			this.cbAutorun.Location = new System.Drawing.Point(185, 7);
 			this.cbAutorun.Name = "cbAutorun";
 			this.cbAutorun.Size = new System.Drawing.Size(135, 19);
@@ -458,7 +458,7 @@
         	this.btnLangChange.Name = "btnLangChange";
         	this.btnLangChange.Size = new System.Drawing.Size(30, 23);
         	this.btnLangChange.TabIndex = 32;
-        	this.btnLangChange.Text = "RU";
+        	this.btnLangChange.Text = "UA";
         	this.btnLangChange.TextAlign = System.Drawing.ContentAlignment.TopCenter;
         	this.btnLangChange.UseVisualStyleBackColor = true;
         	this.btnLangChange.Click += new System.EventHandler(this.btnLangChange_Click);
